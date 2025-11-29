@@ -14,7 +14,7 @@ const Footer = () => {
                 <Shield className="w-6 h-6 text-primary-foreground" />
               </div>
               <span className="text-xl font-bold">
-                Protege<span className="text-primary">Seg</span>
+                Pernambuco <span className="text-primary">Seguros</span>
               </span>
             </a>
             <p className="text-background/70 mb-6">
@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/70 text-sm text-center md:text-left">
-            © {currentYear} ProtegeSeg Corretora de Seguros. Todos os direitos reservados.
+            © {currentYear} Pernambuco Seguros - Corretora de Seguros. Todos os direitos reservados.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-background/70 hover:text-primary transition-colors">

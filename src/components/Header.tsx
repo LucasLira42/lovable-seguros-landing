@@ -23,7 +23,7 @@ const Header = () => {
               <Shield className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold text-foreground">
-              Protege<span className="text-primary">Seg</span>
+              Pernambuco <span className="text-primary">Seguros</span>
             </span>
           </a>
 
