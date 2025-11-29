@@ -25,46 +25,46 @@ const Hero = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-4 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Sua Segurança é Nossa Prioridade
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 sm:mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Oferecemos as melhores soluções em seguros para você, sua família, seu carro e sua empresa. Cotação gratuita e atendimento personalizado.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <Button variant="hero" size="lg">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <Button variant="hero" size="lg" className="text-sm sm:text-base">
               Faça sua Cotação Grátis
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+            <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground text-sm sm:text-base">
               Fale com um Especialista
             </Button>
           </div>
 
           {/* Trust Badges */}
-          <div className="grid grid-cols-3 gap-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary-foreground/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
-                <Shield className="w-6 h-6 text-primary-foreground" />
+              <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-primary-foreground/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
+                <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
               </div>
-              <p className="text-primary-foreground font-bold text-2xl">10k+</p>
-              <p className="text-primary-foreground/80 text-sm">Clientes Satisfeitos</p>
+              <p className="text-primary-foreground font-bold text-xl sm:text-2xl">10k+</p>
+              <p className="text-primary-foreground/80 text-xs sm:text-sm">Clientes Satisfeitos</p>
             </div>
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary-foreground/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
-                <Clock className="w-6 h-6 text-primary-foreground" />
+              <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-primary-foreground/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
+                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
               </div>
-              <p className="text-primary-foreground font-bold text-2xl">24h</p>
-              <p className="text-primary-foreground/80 text-sm">Atendimento</p>
+              <p className="text-primary-foreground font-bold text-xl sm:text-2xl">24h</p>
+              <p className="text-primary-foreground/80 text-xs sm:text-sm">Atendimento</p>
             </div>
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary-foreground/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
-                <Award className="w-6 h-6 text-primary-foreground" />
+              <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-primary-foreground/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
+                <Award className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
               </div>
-              <p className="text-primary-foreground font-bold text-2xl">25+</p>
-              <p className="text-primary-foreground/80 text-sm">Anos de Experiência</p>
+              <p className="text-primary-foreground font-bold text-xl sm:text-2xl">25+</p>
+              <p className="text-primary-foreground/80 text-xs sm:text-sm">Anos de Experiência</p>
             </div>
           </div>
         </div>
