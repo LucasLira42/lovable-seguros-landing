@@ -3,26 +3,26 @@ import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-24 bg-hero-gradient relative overflow-hidden">
+    <section id="contato" className="py-12 sm:py-16 md:py-24 bg-hero-gradient relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-48 sm:w-96 h-48 sm:h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-48 sm:w-96 h-48 sm:h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* CTA Content */}
           <div>
-            <span className="inline-block text-primary-foreground/80 font-semibold text-sm uppercase tracking-wider mb-4">
+            <span className="inline-block text-primary-foreground/80 font-semibold text-xs sm:text-sm uppercase tracking-wider mb-3 sm:mb-4">
               Entre em Contato
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
               Solicite Sua Cotação Gratuita Agora
             </h2>
-            <p className="text-primary-foreground/90 text-lg mb-8">
+            <p className="text-primary-foreground/90 text-base sm:text-lg mb-6 sm:mb-8">
               Nossa equipe de especialistas está pronta para encontrar a melhor solução em seguros para você. Atendimento rápido e personalizado.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary-foreground/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-primary-foreground" />
@@ -66,8 +66,8 @@ const Contact = () => {
           </div>
 
           {/* Form Card */}
-          <div className="bg-card rounded-2xl p-8 card-shadow">
-            <h3 className="text-2xl font-bold text-foreground mb-6">
+          <div className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 card-shadow">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">
               Preencha o formulário
             </h3>
             <form className="space-y-4">

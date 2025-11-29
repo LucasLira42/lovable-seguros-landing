@@ -54,42 +54,42 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="servicos" className="py-24 bg-secondary">
+    <section id="servicos" className="py-12 sm:py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16">
+          <span className="inline-block text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-3 sm:mb-4">
             Nossos Serviços
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Soluções em Seguros para Todas as Suas Necessidades
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Trabalhamos com as melhores seguradoras do mercado para oferecer coberturas completas e personalizadas.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {services.map((service, index) => (
             <div
               key={service.title}
               className="group bg-card rounded-2xl overflow-hidden card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-2"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 sm:h-48 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
-                <div className="absolute bottom-4 left-4 w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary-foreground" />
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 w-10 h-10 sm:w-12 sm:h-12 bg-primary rounded-xl flex items-center justify-center">
+                  <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
                 </div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 sm:mb-3">{service.title}</h3>
+                <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6">{service.description}</p>
 
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature) => (
