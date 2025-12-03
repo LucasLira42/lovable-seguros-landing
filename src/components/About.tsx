@@ -2,7 +2,7 @@ import { CheckCircle, Users, TrendingUp, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const stats = [
-  { value: "25+", label: "Anos no Mercado", icon: TrendingUp },
+  { value: "10+", label: "Anos no Mercado", icon: TrendingUp },
   { value: "10.000+", label: "Clientes Atendidos", icon: Users },
   { value: "50+", label: "Seguradoras Parceiras", icon: Shield },
   { value: "98%", label: "Satisfação", icon: CheckCircle },
@@ -31,7 +31,7 @@ const About = () => {
               Sua Corretora de Seguros de Confiança
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg mb-6 sm:mb-8">
-              Há mais de 25 anos no mercado, a Pernambuco Seguros é referência em corretagem de seguros. 
+              Há mais de 10 anos no mercado, a Pernambuco Seguros é referência em corretagem de seguros.
               Nossa missão é proteger o que é mais importante para você, oferecendo as melhores 
               soluções do mercado com atendimento personalizado e transparente.
             </p>
