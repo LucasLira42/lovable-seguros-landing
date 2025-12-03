@@ -1,11 +1,13 @@
-import { Car, Home, Heart, Briefcase, Plane, Smartphone, ArrowRight, Plus } from "lucide-react";
+import { Car, Home, Heart, Briefcase, Plane, HeartPulse, Shield, PiggyBank, ArrowRight, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import serviceAuto from "@/assets/service-auto.jpg";
 import serviceHome from "@/assets/service-home.jpg";
 import serviceLife from "@/assets/service-life.jpg";
 import serviceBusiness from "@/assets/service-business.jpg";
 import serviceTravel from "@/assets/service-travel.jpg";
-import serviceMobile from "@/assets/service-mobile.jpg";
+import serviceHealth from "@/assets/service-health.jpg";
+import serviceLiability from "@/assets/service-liability.jpg";
+import servicePension from "@/assets/service-pension.jpg";
 
 const services = [
   {
@@ -44,11 +46,25 @@ const services = [
     image: serviceTravel,
   },
   {
-    icon: Smartphone,
-    title: "Seguro Celular",
-    description: "Proteção para seu smartphone contra roubo, furto, quebra acidental e danos por líquidos.",
-    features: ["Roubo e furto", "Quebra acidental", "Danos por líquidos"],
-    image: serviceMobile,
+    icon: HeartPulse,
+    title: "Plano de Saúde Empresarial",
+    description: "Ofereça o melhor para seus colaboradores com planos de saúde completos e acessíveis.",
+    features: ["Rede credenciada ampla", "Cobertura nacional", "Planos customizados"],
+    image: serviceHealth,
+  },
+  {
+    icon: Shield,
+    title: "Seguro Responsabilidade Civil",
+    description: "Proteção contra danos causados a terceiros no exercício da sua atividade profissional.",
+    features: ["Cobertura profissional", "Defesa jurídica", "Danos materiais e corporais"],
+    image: serviceLiability,
+  },
+  {
+    icon: PiggyBank,
+    title: "Previdência Privada",
+    description: "Planeje seu futuro com segurança através de planos de previdência personalizados.",
+    features: ["PGBL e VGBL", "Benefício fiscal", "Rentabilidade competitiva"],
+    image: servicePension,
   },
 ];
 

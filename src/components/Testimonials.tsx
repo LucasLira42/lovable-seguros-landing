@@ -47,33 +47,34 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.name}
-              className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 card-shadow hover:card-shadow-hover transition-all duration-300 relative"
+              className="bg-card rounded-xl sm:rounded-2xl overflow-hidden card-shadow hover:card-shadow-hover transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-primary/20 absolute top-4 right-4 sm:top-6 sm:right-6" />
-              
-              <div className="flex gap-1 mb-3 sm:mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-accent text-accent" />
-                ))}
-              </div>
-
-              <p className="text-muted-foreground mb-4 sm:mb-6 relative z-10 text-sm sm:text-base">
-                "{testimonial.content}"
-              </p>
-
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
-                  <img 
-                    src={testimonial.image} 
-                    alt={`Foto de ${testimonial.name}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
+              <div className="relative h-40 sm:h-48 overflow-hidden">
+                <img
+                  src={testimonial.image}
+                  alt={`Foto de ${testimonial.name}`}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent" />
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4">
                   <p className="font-semibold text-foreground text-sm sm:text-base">{testimonial.name}</p>
                   <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
+              </div>
+
+              <div className="p-5 sm:p-6 relative">
+                <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-primary/20 absolute top-4 right-4 sm:top-6 sm:right-6" />
+                
+                <div className="flex gap-1 mb-3 sm:mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-accent text-accent" />
+                  ))}
+                </div>
+
+                <p className="text-muted-foreground relative z-10 text-sm sm:text-base">
+                  "{testimonial.content}"
+                </p>
               </div>
             </div>
           ))}
