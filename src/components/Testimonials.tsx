@@ -1,4 +1,7 @@
 import { Star, Quote } from "lucide-react";
+import testimonialMaria from "@/assets/testimonial-maria.png";
+import testimonialJoao from "@/assets/testimonial-joao.png";
+import testimonialAna from "@/assets/testimonial-ana.png";
 
 const testimonials = [
   {
@@ -6,18 +9,21 @@ const testimonials = [
     role: "Empresária",
     content: "Excelente atendimento! A ProtegeSeg me ajudou a encontrar o melhor seguro para minha empresa com um preço justo. Recomendo a todos!",
     rating: 5,
+    image: testimonialMaria,
   },
   {
     name: "João Santos",
     role: "Médico",
     content: "Há 10 anos sou cliente da ProtegeSeg e nunca me decepcionaram. Quando precisei acionar o seguro do carro, o atendimento foi rápido e eficiente.",
     rating: 5,
+    image: testimonialJoao,
   },
   {
     name: "Ana Oliveira",
     role: "Advogada",
     content: "Profissionais competentes e sempre disponíveis. Me sinto segura sabendo que tenho a ProtegeSeg cuidando dos meus seguros.",
     rating: 5,
+    image: testimonialAna,
   },
 ];
 
@@ -57,10 +63,12 @@ const Testimonials = () => {
               </p>
 
               <div className="flex items-center gap-3 sm:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold text-base sm:text-lg">
-                    {testimonial.name.charAt(0)}
-                  </span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
+                  <img 
+                    src={testimonial.image} 
+                    alt={`Foto de ${testimonial.name}`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-semibold text-foreground text-sm sm:text-base">{testimonial.name}</p>
