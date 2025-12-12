@@ -5,7 +5,7 @@ const stats = [
   { value: "10+", label: "Anos no Mercado", icon: TrendingUp },
   { value: "10.000+", label: "Clientes Atendidos", icon: Users },
   { value: "50+", label: "Seguradoras Parceiras", icon: Shield },
-  { value: "98%", label: "Satisfação", icon: CheckCircle },
+  { value: "24h", label: "Suporte Disponível", icon: CheckCircle },
 ];
 
 const features = [
@@ -45,9 +45,6 @@ const About = () => {
               ))}
             </div>
 
-            <Button size="lg" className="w-full sm:w-auto">
-              Conheça Nossa História
-            </Button>
           </div>
 
           {/* Stats Grid */}
