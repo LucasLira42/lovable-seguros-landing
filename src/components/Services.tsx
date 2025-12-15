@@ -116,9 +116,11 @@ const Services = () => {
                   ))}
                 </ul>
 
-                <Button variant="link" className="p-0 h-auto group/btn">
-                  Saiba mais
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                <Button variant="link" className="p-0 h-auto group/btn" asChild>
+                  <a href="#contato">
+                    Solicitar Cotação
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
                 </Button>
               </div>
             </div>
