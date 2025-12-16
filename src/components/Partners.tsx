@@ -49,6 +49,10 @@ const Partners = () => {
             </div>
           ))}
         </div>
+
+        <p className="text-center text-muted-foreground mt-8 sm:mt-10 md:mt-12 text-sm sm:text-base">
+          E muitas outras seguradoras parceiras para oferecer sempre a melhor opção para você.
+        </p>
       </div>
     </section>
   );
